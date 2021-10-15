@@ -14,19 +14,6 @@
     "sourceMap": true,
     "noEmit": true,
     "baseUrl": ".",
-    "paths": {
-      "app-constants": ["src/app-constants"],
-      "assets/*": ["assets/*"],
-      "components/*": ["src/components/*"],
-      "config/*": ["src/config/*"],
-      "generated/*": ["generated/*"],
-      "graphql-local/*": ["src/graphql/*"],
-      "pages/*": ["src/pages/*"],
-      "test/*": ["src/test/*"],
-      "theme": ["src/theme"],
-      "utils/*": ["src/utils/*"],
-      "*": ["*"]
-    },
     "lib": [
       "es5",
       "es6",
@@ -45,22 +32,10 @@
       "esnext.asynciterable"
     ],
     "skipLibCheck": true,
-    "types": ["cypress", "jest", "node", "react" ]
+    "types": ["node", "react"]
   },
   "exclude": [
-    "./node_modules",
-    ".fixtures",
     ".github",
-    "assets",
-    "build",
-    "dist",
-    "dist-dev",
-    "dist-production",
-    "dist-staging",
-    "tests",
-    "node_modules",
-    "**/cypress/**/*",
-    "**/generated/**/*",
-    "**/test/utils/**/*"
-  ],
+    "build"
+  ]
 }
